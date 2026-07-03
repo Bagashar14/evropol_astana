@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Каталог | EVROPOL - Премиальный европейский ламинат</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .product-card-shadow {
+            box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+        }
+        .product-card-shadow:hover {
+            box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+        }
+        /* Custom scrollbar for minimalist feel */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #e4e2e4; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #c8c6c8; }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#474649",
+                    "on-tertiary-fixed": "#1a1c1d",
+                    "inverse-surface": "#2f3034",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#1b1d1f",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#020203",
+                    "on-tertiary-fixed-variant": "#454749",
+                    "on-secondary-container": "#79542d",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#1d1d1f",
+                    "surface-dim": "#dad9df",
+                    "on-error": "#ffffff",
+                    "on-tertiary-container": "#848587",
+                    "outline": "#77767b",
+                    "on-secondary-fixed-variant": "#61401b",
+                    "surface-container-low": "#f4f3f8",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed-dim": "#c8c6c8",
+                    "surface-container-high": "#e9e7ed",
+                    "surface-variant": "#e3e2e7",
+                    "primary": "#030304",
+                    "on-primary-container": "#868587",
+                    "surface": "#faf8fe",
+                    "secondary-fixed": "#ffdcbd",
+                    "primary-fixed": "#e4e2e4",
+                    "outline-variant": "#c7c6ca",
+                    "surface-tint": "#5f5e60",
+                    "secondary": "#7c5730",
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#faf8fe",
+                    "inverse-on-surface": "#f1f0f5",
+                    "tertiary-fixed-dim": "#c6c6c8",
+                    "on-surface": "#1a1b1f",
+                    "surface-container-highest": "#e3e2e7",
+                    "secondary-fixed-dim": "#eebd8e",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#faf8fe",
+                    "secondary-container": "#fdcb9b",
+                    "on-secondary-fixed": "#2c1600",
+                    "tertiary-fixed": "#e2e2e4",
+                    "on-surface-variant": "#46464a",
+                    "on-primary-fixed": "#1b1b1d",
+                    "surface-container": "#eeedf3",
+                    "on-background": "#1a1b1f",
+                    "inverse-primary": "#c8c6c8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "12px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "container-max": "1440px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "section-gap": "120px",
+                    "stack-lg": "32px",
+                    "margin-desktop": "80px",
+                    "stack-md": "16px",
+                    "stack-sm": "8px"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-caps": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "button": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-xl": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "button": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen">
+<!-- TopNavBar -->
+<header class="docked full-width top-0 sticky z-50 glass-nav bg-surface/80">
+<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-12">
+<a class="font-headline-md text-headline-md font-bold tracking-tight text-primary" href="../index.html">EVROPOL</a>
+<nav class="hidden md:flex items-center gap-8 font-button text-button">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Акции</a>
+<a class="text-primary border-b-2 border-primary pb-1" href="#">Ламинат</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Винил</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Аксессуары</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-primary hover:scale-[1.02] transition-transform">search</button>
+<div class="relative">
+<span class="material-symbols-outlined text-primary hover:scale-[1.02] transition-transform" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-secondary text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">0</span>
+</div>
+<button class="hidden md:block bg-primary text-on-primary px-6 py-2.5 rounded-xl font-button text-button hover:scale-[1.02] transition-transform">
+                    Связаться с нами
+                </button>
+</div>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-desktop">
+<!-- Hero/Header Section -->
+<section class="py-stack-lg">
+<nav class="flex items-center gap-2 text-on-surface-variant font-label-caps text-label-caps mb-4 uppercase tracking-widest">
+<a class="hover:text-primary transition-colors" href="../evropol/code.html">Главная</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Каталог</span>
+</nav>
+<h1 class="font-headline-lg text-headline-lg text-primary">Каталог ламината</h1>
+</section>
+<!-- Catalog Layout -->
+<div class="flex gap-gutter pb-section-gap">
+<!-- SideNavBar (Filter Sidebar) -->
+<aside class="hidden lg:flex flex-col gap-stack-md w-64 shrink-0">
+<div class="flex items-center justify-between mb-2">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary">Фильтры</h2>
+<p class="font-label-caps text-on-surface-variant">Уточните выбор</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">tune</span>
+</div>
+<!-- Filter Sections -->
+<div class="space-y-6">
+<!-- Category -->
+<div class="border-b border-outline-variant/30 pb-4">
+<button class="flex items-center justify-between w-full font-label-caps text-label-caps text-primary uppercase tracking-widest py-2" onclick="toggleFilter('cat-options')">
+<span>Категория</span>
+<span class="material-symbols-outlined text-[18px]" id="cat-icon">expand_more</span>
+</button>
+<div class="mt-3 space-y-2" id="cat-options">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary filter-category" type="checkbox" value="laminate"/>
+<span class="text-body-md text-on-surface-variant group-hover:text-primary">Ламинат</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary filter-category" type="checkbox" value="vinyl"/>
+<span class="text-body-md text-on-surface-variant group-hover:text-primary">Винил</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary filter-category" type="checkbox" value="spc"/>
+<span class="text-body-md text-on-surface-variant group-hover:text-primary">SPC</span>
+</label>
+</div>
+</div>
+<!-- Thickness -->
+<div class="border-b border-outline-variant/30 pb-4">
+<button class="flex items-center justify-between w-full font-label-caps text-label-caps text-primary uppercase tracking-widest py-2">
+<span>Толщина</span>
+<span class="material-symbols-outlined text-[18px]">straighten</span>
+</button>
+<div class="flex flex-wrap gap-2 mt-3" id="thickness-options">
+<button class="filter-thickness-btn px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps hover:bg-secondary hover:text-white transition-colors" data-thickness="8">8 мм</button>
+<button class="filter-thickness-btn px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps hover:bg-secondary hover:text-white transition-colors" data-thickness="10">10 мм</button>
+<button class="filter-thickness-btn px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps hover:bg-secondary hover:text-white transition-colors" data-thickness="12">12 мм</button>
+</div>
+</div>
+<!-- Class -->
+<div class="border-b border-outline-variant/30 pb-4">
+<button class="flex items-center justify-between w-full font-label-caps text-label-caps text-primary uppercase tracking-widest py-2">
+<span>Класс</span>
+<span class="material-symbols-outlined text-[18px]">grade</span>
+</button>
+<div class="mt-3 space-y-2" id="class-options">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary filter-class" type="checkbox" value="32"/>
+<span class="text-body-md text-on-surface-variant">32 класс</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary filter-class" type="checkbox" value="33"/>
+<span class="text-body-md text-on-surface-variant">33 класс</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary filter-class" type="checkbox" value="34"/>
+<span class="text-body-md text-on-surface-variant">34 класс</span>
+</label>
+</div>
+</div>
+<!-- Water Resistance -->
+<div class="pb-4">
+<button class="flex items-center justify-between w-full font-label-caps text-label-caps text-primary uppercase tracking-widest py-2">
+<span>Влагостойкость</span>
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+</button>
+<div class="mt-3">
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value="" id="filter-water"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+<span class="ms-3 text-body-md text-on-surface-variant">Только влагостойкие</span>
+</label>
+</div>
+</div>
+</div>
+<button id="apply-filters-btn" class="mt-6 w-full bg-primary text-on-primary py-4 rounded-xl font-button text-button hover:scale-[1.02] transition-transform active:scale-[0.98]">
+                    Применить фильтры
+                </button>
+</aside>
+<!-- Product Grid -->
+<div class="flex-1">
+<!-- Sorting & Count Header -->
+<div class="flex justify-between items-center mb-stack-lg">
+<p class="text-on-surface-variant font-body-md" id="product-count-text">Показано <span class="text-primary font-bold" id="visible-count">0</span> из <span id="total-count">0</span> товаров</p>
+<div class="flex items-center gap-4">
+<span class="font-label-caps text-on-surface-variant">Сортировать:</span>
+<select id="sort-select" class="bg-transparent border-none text-primary font-bold focus:ring-0 cursor-pointer">
+<option value="popularity">По популярности</option>
+<option value="price_asc">Цена: по возрастанию</option>
+<option value="price_desc">Цена: по убыванию</option>
+<option value="newest">Сначала новые</option>
+</select>
+</div>
+</div>
+<!-- Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-gutter" id="catalog-grid">
+<!-- Будет загружено динамически через JS -->
+</div>
+<!-- Pagination -->
+<div class="mt-section-gap flex justify-center items-center gap-2" id="pagination">
+<!-- Будет сгенерировано динамически -->
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest py-section-gap mt-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="space-y-6">
+<a class="font-headline-md text-headline-md font-bold text-primary" href="#">EVROPOL</a>
+<p class="text-on-surface-variant font-body-md max-w-xs">
+                    Премиальный европейский ламинат и напольные покрытия для изысканных интерьеров в Казахстане.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-button text-button text-primary uppercase tracking-widest">Каталог</h4>
+<nav class="flex flex-col gap-2 font-body-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Ламинат</a>
+<a class="hover:text-primary transition-colors" href="#">Виниловые полы</a>
+<a class="hover:text-primary transition-colors" href="#">SPC панели</a>
+<a class="hover:text-primary transition-colors" href="#">Плинтусы</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-button text-button text-primary uppercase tracking-widest">Компания</h4>
+<nav class="flex flex-col gap-2 font-body-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">О компании</a>
+<a class="hover:text-primary transition-colors" href="#">Доставка</a>
+<a class="hover:text-primary transition-colors" href="#">Гарантия</a>
+<a class="hover:text-primary transition-colors" href="#">Контакты</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-button text-button text-primary uppercase tracking-widest">Рассылка</h4>
+<p class="text-on-surface-variant font-body-md">Получайте вдохновение и эксклюзивные предложения.</p>
+<div class="flex gap-2">
+<input class="bg-surface-container border-none rounded-xl px-4 py-2 w-full focus:ring-1 focus:ring-primary text-body-md" placeholder="Ваш Email" type="email"/>
+<button class="bg-primary text-on-primary p-2 px-4 rounded-xl hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop max-w-container-max mx-auto mt-stack-lg pt-stack-md border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4 text-on-surface-variant font-label-caps text-label-caps">
+<p>© 2024 Специалисты по ламинату Evropol. Все права защищены.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Политика конфиденциальности</a>
+<a class="hover:text-primary" href="#">Условия использования</a>
+</div>
+</div>
+</footer>
+<script>
+        function toggleFilter(id) {
+            const el = document.getElementById(id);
+            const icon = document.getElementById(id.replace('options', 'icon'));
+            if (el.classList.contains('hidden')) {
+                el.classList.remove('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                el.classList.add('hidden');
+                icon.style.transform = 'rotate(-90deg)';
+            }
+        }
+
+        let allProducts = [];
+        let filteredProducts = [];
+        let activeThickness = null;
+        let currentPage = 1;
+        const itemsPerPage = 9;
+
+        // Embedded product data (for static hosting)
+        const PRODUCTS_DATA = [
+          {"id":"1","name":"Oak Scandinavian 8mm","brand":"Kronopol","country":"Польша","category":"laminate","thickness":8,"class":33,"waterResistance":true,"price":7500,"oldPrice":9200,"isPromotion":true,"isNew":false,"image":"https://lh3.googleusercontent.com/aida-public/AB6AXuC4mFuSLNij-VdhH8sC6TEWWqygHeG_JHA-rLAVNvHXa3IXBhWB0okK6wfWdViI3P7phbIKwpMMwe0duUkCjYeoHu65n4Fcb0XA4wd1PcWOiEQLAEBEPDArE3D0ZmmypNgd7hK3451MBObC6d5IeaKeNc1c2SWEflYhlw8XxjuYTF26eMO6YcWCbKrq999AXg0Pw2jRh5cBdA6pDARGP5KL3hg5B3Q-ooEAzkAWBKPwPBQxBGSlfWwu-0x4JV4977ZPa5RhuH_cWGO8","description":"Скандинавский светлый дуб с выразительной текстурой."},
+          {"id":"2","name":"Walnut Classic 10mm","brand":"Egger","country":"Германия","category":"laminate","price":11200,"oldPrice":13100,"thickness":10,"class":32,"waterResistance":false,"isPromotion":true,"isNew":false,"image":"https://lh3.googleusercontent.com/aida-public/AB6AXuAHpEqWTEX9kWCKQBZR7S-nzqR_zXiLDk2_ALjKZwTK8Qlc-GbUyO2VhXfHnG2H3xvRPTN8DKl_KDnldy9dIbUOgTLDPYQJ7GwskhkFmCZtQofCUcBOCymmUmDUob7llIPBew-IiKLn_0ZCRvJys8w3nDXO7LqQ-aEqEKzVaOp4tMZ2q4tCPzumfgmZbgbKpQ-OBE2A7WrwupofIDxWFcF9oTQqq3S2A0FeMTrJkQoMfk-OyprrD50DtYDVbCkMpAPO8w3rC40ZOdXj","description":"Классический темный орех с глубокими шоколадными тонами."},
+          {"id":"3","name":"Smoked Grey Oak 8mm","brand":"Quick-Step","country":"Бельгия","category":"laminate","price":9800,"oldPrice":10900,"thickness":8,"class":32,"waterResistance":true,"isPromotion":true,"isNew":false,"image":"https://lh3.googleusercontent.com/aida-public/AB6AXuA4dfp0VMg8n7RxxebckOwYTHEK-ZvpgxVzNQLLIbgs6Zhgc6gvuprYwBsn5AZ_1qsz-NLrzcrh2UQEKTMF1WHwqmd4oMlu8GePdofpoyXTRCl1q3AsqYh9G6o2TcdQk8e9qpO6-lWbwIYRwsQB1Ks83l5MFV8A0hGs5O8gxCsZ14wR0fzg7mJ8DrS8upejQOd03UUmxSCycGvk64TV98RNpTXUth91J3V4FUnwF86ABvKvSVPFCKd0ewohQdpayecHyvn5psJtiV4e","description":"Копченый серый дуб с эффектом потертости для индустриальных интерьеров."},
+          {"id":"4","name":"Alpine Ash 7mm","brand":"Classen","country":"Германия","category":"laminate","price":6400,"oldPrice":8500,"thickness":8,"class":32,"waterResistance":false,"isPromotion":true,"isNew":false,"image":"https://lh3.googleusercontent.com/aida-public/AB6AXuC-XDoyui7k0prbvup-GcT3g4u6N0OmvFqq-JOGMUHNMtVwZhx5UbYnSGTfs7uOdrgt5fdN0XLq6mxVyNt2GdT9cC___gEeovPKm-6jTulidKq1F-LkH3ONbbC38gwdP6WATNiAsCQNlyLmfcjyttD3xxNU4YtoyBkTML_PRzww3J8Ha9lcgFlol-XjrjanByxCjYelSBT7YhX03PmvnCJUyjvTHH6EjMQzJ3s7MvuF6_eJwhM8Q43Ck3U6xXMwjCPeayPtS-gZq7e6","description":"Светлый ясень для визуального расширения комнат."},
+          {"id":"5","name":"Oak Scandinavian 12mm","brand":"Kronopol","country":"Польша","category":"laminate","price":7200,"oldPrice":8900,"thickness":12,"class":33,"waterResistance":true,"isPromotion":true,"isNew":false,"image":"https://lh3.googleusercontent.com/aida-public/AB6AXuBaWYE4azR_-TOKn-APdu_5CGnLP88RDZGEsf1OW6I83UgX14nNyX-d82u9Y69iHgjxEZ12MqGizya1ehw2wkaQjSSPbC_e8QSZwfQDTMyS9lNqzbMZJcELl9a2qB5MvdtEb2yPOWljlHzwO4qQgK2QB9aYCmB_XyLBILzcq59u9O6j4lB3R9Wci5nKlZuBbwmqoLluuXKxvsYTOYi7F_PiH8wU9IoijdxO-ldAYYpLSLgUlYKvHFjgRr5UeQMoR92xPtsYJm1u08N8","description":"Прочный дубовый ламинат толщиной 12 мм."},
+          {"id":"6","name":"Heritage Walnut 10mm","brand":"BerryAlloc","country":"Бельгия","category":"laminate","price":12500,"oldPrice":null,"thickness":10,"class":32,"waterResistance":false,"isPromotion":false,"isNew":true,"image":"https://lh3.googleusercontent.com/aida-public/AB6AXuCD6IpoQ2yBfjTQubZCiXYpL-qr7q4dMXd4zH7EvtJSmgNwBY3Z8XeSu3Tk2R1ybgig0Us_h9oq9FDy9LQFt8Vt7vL72fpc4KNm5Z-CGZLSt1gWUnoxvFUoZxc_rmlsAGK6E-MbF-c_5UzfpvgU3UNgz6ZCVKrdMidpHPkferounBVbicCySvg9vxNl_GGld8ns3yA0lOz2W8XBGy3xrjBka1Tkf3GLqrI2F-pM1J2xzdWPlLqUfxao3SJQ4GpOw7ZY6dBzjvJMl_YM","description":"Роскошный темный орех премиального качества."},
+          {"id":"7","name":"Majestic Ash 12mm","brand":"Quick-Step","country":"Бельгия","category":"laminate","price":15800,"oldPrice":null,"thickness":12,"class":34,"waterResistance":true,"isPromotion":false,"isNew":false,"image":"https://lh3.googleusercontent.com/aida-public/AB6AXuCqwD_Gwe-tfr0_pANSM7OPRcH2k2_4CTkZRs8jCzQnc2u1O3oL3QIlWXKHvsJKfSn33ZMG0smEP3oc4hrYGo9aAKPs-pNoa7H_7BjyVoPAQwly4HFRFuWHE4njX1UchZox2iaV3O9QR6DO2OEQltulslGz6xHmfaA8gaL6aLU7b0UbVFPFMZ8Luy6pPBYaPa1lleQCHzB0n2CN25R9E33FW4hciMOvi_5N-3yMglyND3pVrQk2qjANNCQ1r8eeA2-Ake31SVdiVq24","description":"Влагостойкое покрытие повышенной прочности для кухонь и коридоров."},
+          {"id":"8","name":"Natural Classic Oak 8mm","brand":"Egger","country":"Германия","category":"laminate","price":6500,"oldPrice":null,"thickness":8,"class":32,"waterResistance":false,"isPromotion":false,"isNew":false,"image":"https://lh3.googleusercontent.com/aida-public/AB6AXuBNlX0Q9RSz4TxntZo_IA3gnxC9jZjEr5gAS2GSn6jshFjZwKYxbGlULSo3rBJMB8XLYPeEf3OvWqRHNJ1fdl8RLz-7WVWSR23xMZ1F3Ug97COAtH-3ZTaNBj5jlWok8kT7MGsMB8t9z7qt76hi0AlNCKSpG7evzvMjKP33H5Ixo_nA9EGsr-DDwjwGM40PVWHT35YUbIL057s29NGYuUwJCL2kW6reQsOdEh0ggR58SiPipZsTgkhZh4cR8vGsvE0YTugzI0ugXaVd","description":"Светло-бежевый дуб с натуральной матовой текстурой."},
+          {"id":"9","name":"Charcoal Stone SPC 6mm","brand":"Pergo","country":"Швеция","category":"spc","price":11900,"oldPrice":null,"thickness":6,"class":33,"waterResistance":true,"isPromotion":false,"isNew":false,"image":"https://lh3.googleusercontent.com/aida-public/AB6AXuCmYvtQhMsG6F_bePtfWnI3oAgyA9fUssx0eZpQ9treX5gvRU_tCaC4OfwjtuJuEw4NnOO5xhwyzyTG3VXnsmlDPxygpXMPyRdlXp7dhrVdSj-QqLN5WaY074xakPacQFp5K-kWxpZki2szSKiXkrbNwuRV99U7EPY35SoTnWcZPJmLg2wOxOzmQ2o4mqveg0L3dy4kVfcVdiYo6B9ic0a9uK68pHFHjtpye4sKVl9EK3TpmBHOR2FFU2rcWfCaUQspr19x8JZaIO7I","description":"Каменно-полимерный винил Charcoal Stone с матовой каменной фактурой."},
+          {"id":"10","name":"Honey Oak Loft 10mm","brand":"Tarkett","country":"Германия","category":"laminate","price":7900,"oldPrice":9500,"thickness":10,"class":32,"waterResistance":false,"isPromotion":true,"isNew":false,"image":"https://lh3.googleusercontent.com/aida-public/AB6AXuBuuY4XVgWG6120IuAeOmUfrWW_nFw_N0COnJe3NjbiBUcPN3xhe4V7wwIzDVPnn4bktspaTFZzDpMfst4kvZyB3of_eiiTP_L4GNXJa6IlN8nKDlVEEJjlM7yaWky9G6YWcG_NWesBXy1J2jpBoDo7fmJgjoMIElt_GTBs0juGf1hx15RP894uPJIkB7_sTyjQLMVHnhMYP0xWM3lwYQipAn0yzoOv4-gm52hlgl-9emkUyfaL7hY5PPHxwFxcoil1DsQrjaYH6fef","description":"Медовый дуб с теплым уютным дизайном."}
+        ];
+
+        // Load products (works without server)
+        function fetchProducts() {
+            allProducts = PRODUCTS_DATA;
+            applyFilters();
+        }
+
+        // Filter & Sort Products
+        function applyFilters() {
+            // Get filter values
+            const selectedCategories = Array.from(document.querySelectorAll('.filter-category:checked')).map(el => el.value);
+            const selectedClasses = Array.from(document.querySelectorAll('.filter-class:checked')).map(el => el.value);
+            const onlyWater = document.getElementById('filter-water').checked;
+
+            filteredProducts = allProducts.filter(product => {
+                // Category filter
+                if (selectedCategories.length > 0 && !selectedCategories.includes(product.category)) {
+                    return false;
+                }
+                // Thickness filter
+                if (activeThickness && parseInt(product.thickness) !== activeThickness) {
+                    return false;
+                }
+                // Class filter
+                if (selectedClasses.length > 0 && !selectedClasses.includes(String(product.class))) {
+                    return false;
+                }
+                // Water resistance
+                if (onlyWater && !product.waterResistance) {
+                    return false;
+                }
+                return true;
+            });
+
+            // Sort products
+            const sortBy = document.getElementById('sort-select').value;
+            if (sortBy === 'price_asc') {
+                filteredProducts.sort((a, b) => a.price - b.price);
+            } else if (sortBy === 'price_desc') {
+                filteredProducts.sort((a, b) => b.price - a.price);
+            } else if (sortBy === 'newest') {
+                filteredProducts.sort((a, b) => (b.isNew ? 1 : 0) - (a.isNew ? 1 : 0));
+            } else {
+                // 'popularity' or default: sort by ID
+                filteredProducts.sort((a, b) => parseInt(a.id) - parseInt(b.id));
+            }
+
+            currentPage = 1;
+            renderCatalog();
+        }
+
+        // Render Catalog Grid and pagination
+        function renderCatalog() {
+            // Render visible and total counts
+            document.getElementById('visible-count').textContent = filteredProducts.length;
+            document.getElementById('total-count').textContent = allProducts.length;
+
+            const grid = document.getElementById('catalog-grid');
+            if (filteredProducts.length === 0) {
+                grid.innerHTML = '<div class="col-span-full text-center py-12 text-on-surface-variant">Товары не найдены по выбранным фильтрам.</div>';
+                document.getElementById('pagination').innerHTML = '';
+                return;
+            }
+
+            // Pagination indexes
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const pageItems = filteredProducts.slice(startIndex, endIndex);
+
+            // Render items
+            grid.innerHTML = pageItems.map(product => {
+                // Badges
+                let badges = [];
+                if (product.isPromotion) {
+                    badges.push('<span class="bg-secondary text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Акция</span>');
+                }
+                if (product.isNew) {
+                    badges.push('<span class="bg-primary text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Новинка</span>');
+                }
+                if (product.waterResistance) {
+                    badges.push('<span class="bg-blue-600 text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Влагостойкий</span>');
+                }
+                const badgeHtml = badges.join('');
+
+                // Price & Old Price
+                const oldPriceHtml = product.oldPrice ? `<span class="text-on-surface-variant line-through text-[14px]">${product.oldPrice.toLocaleString('ru-RU')} ₸</span>` : '';
+                const priceHtml = `${product.price.toLocaleString('ru-RU')} ₸`;
+
+                return `
+                    <div class="group cursor-pointer" data-id="${product.id}">
+                        <div class="relative aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-surface-container-low">
+                            <div class="absolute top-4 left-4 z-10 flex flex-col gap-2">
+                                ${badgeHtml}
+                            </div>
+                            <button class="absolute top-4 right-4 z-10 w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-sm">
+                                <span class="material-symbols-outlined text-[20px]">favorite</span>
+                            </button>
+                            <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" 
+                                 style="background-image: url('${product.image || 'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&q=80&w=400'}')">
+                            </div>
+                            <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors"></div>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-headline-md text-[18px] text-primary group-hover:text-secondary transition-colors">${product.brand} - ${product.name}</h3>
+                            <div class="flex items-center gap-3 text-on-surface-variant text-[14px]">
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">straighten</span> ${product.thickness} мм</span>
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">grade</span> ${product.class} класс</span>
+                            </div>
+                            <div class="pt-2 flex justify-between items-end">
+                                <div>
+                                    ${oldPriceHtml}
+                                    <p class="text-headline-md text-primary font-bold">${priceHtml} <span class="text-body-md font-normal text-on-surface-variant">/ м²</span></p>
+                                </div>
+                                <button class="w-10 h-10 rounded-xl border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                                    <span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // Add micro-interactions
+            grid.querySelectorAll('.group').forEach(card => {
+                card.addEventListener('mousedown', () => {
+                    card.style.transform = 'scale(0.98)';
+                });
+                card.addEventListener('mouseup', () => {
+                    card.style.transform = 'scale(1)';
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'scale(1)';
+                });
+            });
+
+            renderPagination();
+        }
+
+        // Render Pagination Controls
+        function renderPagination() {
+            const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+            const paginationContainer = document.getElementById('pagination');
+
+            if (totalPages <= 1) {
+                paginationContainer.innerHTML = '';
+                return;
+            }
+
+            let paginationHtml = '';
+            
+            // Left Arrow
+            paginationHtml += `
+                <button onclick="changePage(${currentPage - 1})" class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-primary ${currentPage === 1 ? 'opacity-50 pointer-events-none' : ''}">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+            `;
+
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === currentPage) {
+                    paginationHtml += `<button class="w-10 h-10 rounded-xl bg-primary text-on-primary font-button">${i}</button>`;
+                } else {
+                    paginationHtml += `<button onclick="changePage(${i})" class="w-10 h-10 rounded-xl hover:bg-surface-container-high transition-colors font-button text-on-surface-variant">${i}</button>`;
+                }
+            }
+
+            // Right Arrow
+            paginationHtml += `
+                <button onclick="changePage(${currentPage + 1})" class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-primary ${currentPage === totalPages ? 'opacity-50 pointer-events-none' : ''}">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+            `;
+
+            paginationContainer.innerHTML = paginationHtml;
+        }
+
+        function changePage(page) {
+            currentPage = page;
+            renderCatalog();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Init event listeners
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchProducts();
+
+            // Category inputs
+            document.querySelectorAll('.filter-category').forEach(el => {
+                el.addEventListener('change', () => applyFilters());
+            });
+
+            // Class inputs
+            document.querySelectorAll('.filter-class').forEach(el => {
+                el.addEventListener('change', () => applyFilters());
+            });
+
+            // Water resistance
+            document.getElementById('filter-water').addEventListener('change', () => applyFilters());
+
+            // Thickness buttons
+            document.querySelectorAll('.filter-thickness-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const thickness = parseInt(btn.getAttribute('data-thickness'));
+                    
+                    if (activeThickness === thickness) {
+                        // Deselect
+                        activeThickness = null;
+                        btn.classList.remove('bg-secondary', 'text-white');
+                        btn.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+                    } else {
+                        // Deselect other thickness buttons
+                        document.querySelectorAll('.filter-thickness-btn').forEach(b => {
+                            b.classList.remove('bg-secondary', 'text-white');
+                            b.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+                        });
+                        // Select this button
+                        activeThickness = thickness;
+                        btn.classList.add('bg-secondary', 'text-white');
+                        btn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+                    }
+                    applyFilters();
+                });
+            });
+
+            // Sort dropdown
+            document.getElementById('sort-select').addEventListener('change', () => applyFilters());
+
+            // Apply filters button
+            document.getElementById('apply-filters-btn').addEventListener('click', () => {
+                applyFilters();
+                // Smooth scroll to catalog grid on mobile
+                if (window.innerWidth < 1024) {
+                    document.getElementById('catalog-grid').scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+<!-- Floating Admin Gear -->
+<div class="fixed bottom-6 right-6 z-[100] group">
+    <a href="../admin.html" class="w-14 h-14 bg-primary text-on-primary rounded-full shadow-lg flex items-center justify-center hover:scale-105 active:scale-95 transition-transform border border-outline-variant/30">
+        <span class="material-symbols-outlined text-[28px]">settings</span>
+    </a>
+    <div class="absolute right-16 top-1/2 -translate-y-1/2 bg-primary text-on-primary text-xs px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow pointer-events-none">
+        Админ-панель
+    </div>
+</div>
+</body></html>
